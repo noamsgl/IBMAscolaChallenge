@@ -1,4 +1,3 @@
-import itertools
 import pandas as pd
 from qiskit import Aer
 from qiskit import execute
@@ -81,12 +80,13 @@ class DatasetGenerator:
         Expected Value
         :return: df: DataFrame
         """
-        gateStrings = ["Gate_{}".format(i) for i in range(self.L)]
-        nmStrings = ["NM_{}".format(i) for i in range(self.L)]
+
         column_names = []
-        for i in range(len(gateStrings)):
-            column_names.append(gateStrings[i])
-            column_names.append(nmStrings[i])
+        for i in range(self.L):
+            column_names.append("Gate_{}_theta".format(i))
+            column_names.append("Gate_{}_phi".format(i))
+            column_names.append("Gate_{}_lambda".format(i))
+            column_names.append("NM_{}".format(i))
         column_names.append("ExpectedValue")
         df = pd.DataFrame(columns=column_names)
         return df
