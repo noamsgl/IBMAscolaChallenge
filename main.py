@@ -3,8 +3,7 @@ from pprint import pprint
 import matplotlib.pyplot as plt
 from qiskit import Aer
 from qiskit import QuantumCircuit, execute
-from qiskit.providers.aer.noise import NoiseModel
-from qiskit.providers.aer.noise import depolarizing_error
+from qiskit.providers.aer.noise import NoiseModel, amplitude_damping_error
 from qiskit.test.mock import FakeVigo
 from sklearn import preprocessing
 from sklearn.ensemble import RandomForestClassifier
@@ -18,7 +17,7 @@ from sklearn.ensemble import RandomForestClassifier
 # Yi = noise model
 
 # 1. Kinds of circuits
-# Random Unitaries, Random Cliffords, Certain 1-qubit gate
+# Random Unitaries, Random Cliffords, Certain 1-qubit gate (standard gates)
 
 # 2. Kinds of Noise Models
 # Custom
@@ -50,12 +49,13 @@ def main():
 
     noise_model = NoiseModel()
     basis_gates = noise_model.basis_gates
-    error = depolarizing_error(0.05, 1)
+    error = amplitude_damping_error(0.5)
+    # error = depolarizing_error(0.5, 1)
     noise_model.add_all_qubit_quantum_error(error, ['id', 'u1', 'u2', 'u3'])
 
     # Circuit
     circ = QuantumCircuit(1, 1)
-    circ.id(0)
+    circ.h(0)
     circ.measure([0], [0])
     print("*" * 25 + " Circuit " + "*" * 25)
     print(circ.draw())
@@ -77,7 +77,7 @@ def main():
 
     X = [[x[1] for x in sorted(counts.items())] for counts, nm in Dataset]
     Y_raw = [nm['name'] for counts, nm in Dataset]
-
+    zeros = [x[0] for x in X]
     le = preprocessing.LabelEncoder()
     le.fit(Y_raw)
     Y = le.transform(Y_raw)
@@ -100,17 +100,22 @@ def main():
     # Predict labels on new data
     Xtest = []
     Ytest = []
-    for i in range(900, 1001):
+    for i in range(max(0, min(zeros) - 50), min(max(zeros) + 51, 1001)):
         feature = [[i, 1000 - i]]
         prediction = list(le.inverse_transform(clf.predict(feature)))
         # print("Prediction on {}: {}".format(feature, prediction))
         Xtest.append(i)
         Ytest.append(prediction[0])
+
+    # Plot Diagrams
+
+    fig = plt.figure()
     plt.scatter(Xtest, Ytest, label="test set")
-    plt.scatter([x[0] for x in X], Y_raw, label="training set")
+    plt.scatter(zeros, Y_raw, label="training set")
     plt.xlabel("Feature = Count of '0' measurements")
     plt.ylabel("Predicted Label")
     plt.legend()
+    # fig.axes.append(circ.draw(output='mpl').axes[0])
     plt.show()
 
     # todo: encode circuit
