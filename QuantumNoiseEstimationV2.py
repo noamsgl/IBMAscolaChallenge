@@ -5,7 +5,7 @@ from qiskit.test.mock import FakeVigo
 
 
 class DatasetGenerator:
-    def __init__(self, shots=1000, L=6):
+    def __init__(self, shots=1000, L=3):
         """
         Initialize a new DatasetGenerator.
         This object provides an interface to generate synthetic quantum-noisy datasets.
@@ -15,17 +15,20 @@ class DatasetGenerator:
         :param L: maximum circuit length
         """
 
-        self.shots = shots
-        self.L = L
-        self.observations = []
-        self.features = []
-        self.labels = []
-        self.dataset = self.emptyDataset()
-
-        # Simulator variables
+        # Simulator Variables
         self.device_backend = FakeVigo()
         self.coupling_map = self.device_backend.configuration().coupling_map
         self.simulator = Aer.get_backend('qasm_simulator')
+
+        self.shots = shots
+        self.L = L
+        self.dataset = self.emptyDataset()
+
+        """self.observations = []
+        self.features = []
+        self.labels = []"""
+
+
 
     def add_observation(self, circuit, noise_model):
         """
@@ -59,16 +62,6 @@ class DatasetGenerator:
         counts = result.get_counts()
         return counts
 
-    def __repr__(self):
-        return "I am a dataset generator for quantum noise estimation"
-
-    def mock_dataset(self):
-        """
-        Generate a mock dataset
-        :return: the dataset (QuantumNoiseDataset)
-        """
-        raise NotImplementedError
-
     def emptyDataset(self):
         """
         Generate an empty Dataset.
@@ -88,8 +81,34 @@ class DatasetGenerator:
             column_names.append("Gate_{}_lambda".format(i))
             column_names.append("NM_{}".format(i))
         column_names.append("ExpectedValue")
-        df = pd.DataFrame(columns=column_names)
+        df = pd.DataFrame(dtype='float64', columns=column_names)
+        df.loc[0] = pd.Series(dtype='float64')
+        df.loc[1] = pd.Series(dtype='float64')
+        df.loc[2] = pd.Series(dtype='float64')
         return df
+
+    def __repr__(self):
+        return "I am a dataset generator for quantum noise estimation"
+
+
 
 
 dgen = DatasetGenerator()
+ds = dgen.dataset
+
+print("""
+ds is a DataFrame with defined columns and 3 null rows:""")
+print(ds)
+print()
+print("ds.info()")
+print(ds.info())
+
+"""
+Questions
+
+1. how to encode noise model
+2. how to generate data samples
+
+"""
+
+
