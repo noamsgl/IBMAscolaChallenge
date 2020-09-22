@@ -1,4 +1,4 @@
-# IBMAscolaChallenge
+# IBM Ascola Challenge
 
 IBMAscolaChallenge is a Python library for predicting a Qiskit NoiseModel using machine learning.
 
