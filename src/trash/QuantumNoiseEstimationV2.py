@@ -96,10 +96,6 @@ class DatasetGenerator:
 dgen = DatasetGenerator()
 ds = dgen.dataset
 
-print("""
-ds is a DataFrame with defined columns and 3 null rows:""")
-print(ds)
-print()
 print("ds.info()")
 print(ds.info())
 
