@@ -6,7 +6,8 @@ import numpy as np
 basis_gates = ['u3']
 circ = QuantumCircuit(1, 1)
 RX = RXGate(0)
-circ.append(RX, [0])
+# circ.append(RX, [0])
+circ.h(0)
 circ.measure(0, 0)
 print("Before Transpiling:")
 print(circ)

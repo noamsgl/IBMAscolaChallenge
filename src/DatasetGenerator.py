@@ -7,14 +7,13 @@ from qiskit.providers.aer import QasmSimulator
 from qiskit.providers.aer.noise import NoiseModel, depolarizing_error
 
 
-def U3Dataset(angle_step=8, probability_step=10, shots=1024, save_dir=None):
+def U3Dataset(angle_step=9, probability_step=10, shots=1024, save_dir=None):
     # define constants
     basis_gates = ['u3']
     simulator = QasmSimulator()
     df = pd.DataFrame()
 
     # generate circuits
-    gate_name = 'U3'
     for theta in np.linspace(0, np.pi, angle_step, endpoint=True):
         for phi in np.linspace(0, np.pi, angle_step, endpoint=True):
             for lam in np.linspace(0, np.pi, angle_step, endpoint=True):
@@ -28,6 +27,7 @@ def U3Dataset(angle_step=8, probability_step=10, shots=1024, save_dir=None):
 
                 # generate noise models:
                 for probability in np.linspace(0, 1, probability_step, endpoint=True):
+
                     # add noise
                     noise_model = NoiseModel()
                     error = depolarizing_error(probability, 1)

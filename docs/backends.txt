@@ -1,0 +1,601 @@
+ibmq_16_melbourne
+=================
+Configuration
+-------------
+    n_qubits: 15
+    operational: True
+    status_msg: active
+    pending_jobs: 5
+    backend_version: 2.3.1
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: [[0, 1], [0, 14], [1, 0], [1, 2], [1, 13], [2, 1], [2, 3], [2, 12], [3, 2], [3, 4], [3, 11], [4, 3], [4, 5], [4, 10], [5, 4], [5, 6], [5, 9], [6, 5], [6, 8], [7, 8], [8, 6], [8, 7], [8, 9], [9, 5], [9, 8], [9, 10], [10, 4], [10, 9], [10, 11], [11, 3], [11, 10], [11, 12], [12, 2], [12, 11], [12, 13], [13, 1], [13, 12], [13, 14], [14, 0], [14, 13]]
+    description: 15 qubit device
+    credits_required: True
+    max_experiments: 75
+    conditional: False
+    url: None
+    backend_name: ibmq_16_melbourne
+    meas_map: [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]]
+    online_date: 2018-11-06 05:00:00+00:00
+    n_registers: 1
+    quantum_volume: 8
+    sample_name: albatross
+    allow_object_storage: True
+    memory: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 5.11486 GHz / 53.06722 us / 83.2665 us / 0 / 0.00042 / 0.00083 / 0
+    Q1 / 5.23571 GHz / 59.77795 us / 64.95294 us / 0 / 0.00104 / 0.00208 / 0
+    Q2 / 5.03845 GHz / 74.31735 us / 131.53267 us / 0 / 0.00043 / 0.00087 / 0
+    Q3 / 4.89458 GHz / 62.69118 us / 17.5199 us / 0 / 0.0008 / 0.0016 / 0
+    Q4 / 5.02158 GHz / 65.60329 us / 59.21061 us / 0 / 0.00075 / 0.00151 / 0
+    Q5 / 5.07308 GHz / 18.93082 us / 37.70454 us / 0 / 0.00295 / 0.00588 / 0
+    Q6 / 4.92939 GHz / 66.04142 us / 75.68576 us / 0 / 0.00099 / 0.00199 / 0
+    Q7 / 4.98261 GHz / 39.96522 us / 14.48862 us / 0 / 0.0022 / 0.0044 / 0
+    Q8 / 4.75155 GHz / 115.44864 us / 128.04946 us / 0 / 0.00056 / 0.00112 / 0
+    Q9 / 4.97346 GHz / 43.78171 us / 68.08351 us / 0 / 0.00179 / 0.00357 / 0
+    Q10 / 4.94478 GHz / 55.42226 us / 75.43499 us / 0 / 0.00147 / 0.00295 / 0
+    Q11 / 4.99754 GHz / 57.1604 us / 55.89875 us / 0 / 0.00077 / 0.00154 / 0
+    Q12 / 4.76343 GHz / 62.99137 us / 60.80184 us / 0 / 0.00097 / 0.00194 / 0
+    Q13 / 4.97426 GHz / 29.36635 us / 30.98422 us / 0 / 0.00283 / 0.00566 / 0
+    Q14 / 5.00678 GHz / 36.38066 us / 49.65284 us / 0 / 0.00069 / 0.00139 / 0
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.02686
+    cx0_14 / cx / 0.03688
+    cx1_0 / cx / 0.02686
+    cx1_2 / cx / 0.01004
+    cx1_13 / cx / 0.0726
+    cx2_1 / cx / 0.01004
+    cx2_3 / cx / 0.02613
+    cx2_12 / cx / 0.04561
+    cx3_2 / cx / 0.02613
+    cx3_4 / cx / 0.02019
+    cx3_11 / cx / 0.02873
+    cx4_3 / cx / 0.02019
+    cx4_5 / cx / 0.02711
+    cx4_10 / cx / 0.0338
+    cx5_4 / cx / 0.02711
+    cx5_6 / cx / 0.04653
+    cx5_9 / cx / 0.04007
+    cx6_5 / cx / 0.04653
+    cx6_8 / cx / 0.01837
+    cx7_8 / cx / 0.02343
+    cx8_6 / cx / 0.01837
+    cx8_7 / cx / 0.02343
+    cx8_9 / cx / 0.02882
+    cx9_5 / cx / 0.04007
+    cx9_8 / cx / 0.02882
+    cx9_10 / cx / 0.04776
+    cx10_4 / cx / 0.0338
+    cx10_9 / cx / 0.04776
+    cx10_11 / cx / 0.04278
+    cx11_3 / cx / 0.02873
+    cx11_10 / cx / 0.04278
+    cx11_12 / cx / 0.01606
+    cx12_2 / cx / 0.04561
+    cx12_11 / cx / 0.01606
+    cx12_13 / cx / 0.02549
+    cx13_1 / cx / 0.0726
+    cx13_12 / cx / 0.02549
+    cx13_14 / cx / 0.034
+    cx14_0 / cx / 0.03688
+    cx14_13 / cx / 0.034
+
+ibmq_armonk
+===========
+Configuration
+-------------
+    n_qubits: 1
+    operational: True
+    status_msg: active
+    pending_jobs: 8
+    backend_version: 1.1.1
+    basis_gates: ['id', 'u1', 'u2', 'u3']
+    local: False
+    simulator: False
+    acquisition_latency: []
+    max_shots: 8192
+    dt: 2.2222222222222221e-10
+    dtm: 2.2222222222222221e-10
+    meas_levels: [1, 2]
+    rep_times: [0.001]
+    credits_required: True
+    channels: {'acquire0': {'operates': {'qubits': [0]}, 'purpose': 'acquire', 'type': 'acquire'}, 'd0': {'operates': {'qubits': [0]}, 'purpose': 'drive', 'type': 'drive'}, 'm0': {'operates': {'qubits': [0]}, 'purpose': 'measure', 'type': 'measure'}}
+    conditional: False
+    url: None
+    online_date: 2019-10-16 04:00:00+00:00
+    hamiltonian: {'description': 'Qubits are modeled as Duffing oscillators. In this case, the system includes higher energy states, i.e. not just |0> and |1>. The Pauli operators are generalized via the following set of transformations:\n\n$(\\mathbb{I}-\\sigma_{i}^z)/2 \\rightarrow O_i \\equiv b^\\dagger_{i} b_{i}$,\n\n$\\sigma_{+} \\rightarrow b^\\dagger$,\n\n$\\sigma_{-} \\rightarrow b$,\n\n$\\sigma_{i}^X \\rightarrow b^\\dagger_{i} + b_{i}$.\n\nQubits are coupled through resonator buses. The provided Hamiltonian has been projected into the zero excitation subspace of the resonator buses leading to an effective qubit-qubit flip-flop interaction. The qubit resonance frequencies in the Hamiltonian are the cavity dressed frequencies and not exactly what is returned by the backend defaults, which also includes the dressing due to the qubit-qubit interactions.\n\nQuantities are returned in angular frequencies, with units 2*pi*GHz.\n\nWARNING: Currently not all system Hamiltonian information is available to the public, missing values have been replaced with 0.\n', 'h_latex': '\\begin{align} \\mathcal{H}/\\hbar = & \\sum_{i=0}^{0}\\left(\\frac{\\omega_{q,i}}{2}(\\mathbb{I}-\\sigma_i^{z})+\\frac{\\Delta_{i}}{2}(O_i^2-O_i)+\\Omega_{d,i}D_i(t)\\sigma_i^{X}\\right) \\\\ \\end{align}', 'h_str': ['_SUM[i,0,0,wq{i}/2*(I{i}-Z{i})]', '_SUM[i,0,0,delta{i}/2*O{i}*O{i}]', '_SUM[i,0,0,-delta{i}/2*O{i}]', '_SUM[i,0,0,omegad{i}*X{i}||D{i}]'], 'osc': {}, 'qub': {'0': 3}, 'vars': {'delta0': -2.1895185763064315, 'omegad0': 0.036211122895820624, 'wq0': 31.255372833800156}}
+    u_channel_lo: []
+    quantum_volume: None
+    meas_kernels: ['boxcar']
+    conditional_latency: []
+    memory: True
+    open_pulse: True
+    allow_q_object: True
+    coupling_map: None
+    n_uchannels: 0
+    qubit_lo_range: [[4474447084.679435, 5474447084.679435]]
+    meas_lo_range: [[6493427855.0, 7493427855.0]]
+    discriminators: ['quadratic_discriminator', 'linear_discriminator']
+    max_experiments: 75
+    description: 1 qubit device
+    parametric_pulses: ['gaussian', 'gaussian_square', 'drag', 'constant']
+    qubit_channel_mapping: [['m0', 'd0']]
+    dynamic_reprate_enabled: False
+    uchannels_enabled: True
+    backend_name: ibmq_armonk
+    meas_map: [[0]]
+    n_registers: 1
+    sample_name: SPARROW
+    allow_object_storage: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 4.97445 GHz / 143.14677 us / 153.2347 us / 0 / 0.00048 / 0.00095 / -0.34847
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+
+ibmq_burlington
+===============
+Configuration
+-------------
+    n_qubits: 5
+    operational: False
+    status_msg: maintenance
+    pending_jobs: 3
+    backend_version: 1.1.4
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: [[0, 1], [1, 0], [1, 2], [1, 3], [2, 1], [3, 1], [3, 4], [4, 3]]
+    description: 5 qubit device Burlington
+    credits_required: True
+    max_experiments: 75
+    conditional: False
+    url: None
+    backend_name: ibmq_burlington
+    meas_map: [[0, 1, 2, 3, 4]]
+    online_date: 2019-09-13 04:00:00+00:00
+    n_registers: 1
+    quantum_volume: 8
+    sample_name: Giraffe
+    allow_object_storage: True
+    memory: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 4.6416 GHz / 125.80951 us / 83.08492 us / 0 / 0.00038 / 0.00076 / -0.32653
+    Q1 / 4.72013 GHz / 67.54572 us / 77.37191 us / 0 / 0.00072 / 0.00144 / -0.30785
+    Q2 / 4.76198 GHz / 57.49476 us / 79.05951 us / 0 / 0.00062 / 0.00123 / -0.31168
+    Q3 / 4.6869 GHz / 93.77125 us / 87.52785 us / 0 / 0.00043 / 0.00086 / -0.31085
+    Q4 / 4.92424 GHz / 100.07338 us / 20.78819 us / 0 / 0.00047 / 0.00095 / -0.30926
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.02464
+    cx1_0 / cx / 0.02464
+    cx1_2 / cx / 0.01797
+    cx1_3 / cx / 0.01991
+    cx2_1 / cx / 0.01797
+    cx3_1 / cx / 0.01991
+    cx3_4 / cx / 0.00891
+    cx4_3 / cx / 0.00891
+
+ibmq_essex
+==========
+Configuration
+-------------
+    n_qubits: 5
+    operational: False
+    status_msg: maintenance
+    pending_jobs: 2
+    backend_version: 1.0.2
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: [[0, 1], [1, 0], [1, 2], [1, 3], [2, 1], [3, 1], [3, 4], [4, 3]]
+    description: 5 qubit device Essex
+    credits_required: True
+    max_experiments: 75
+    conditional: False
+    url: None
+    backend_name: ibmq_essex
+    meas_map: [[0, 1, 2, 3, 4]]
+    online_date: 2019-09-13 04:00:00+00:00
+    n_registers: 1
+    quantum_volume: 8
+    sample_name: Giraffe
+    allow_object_storage: True
+    memory: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 4.49936 GHz / 132.20423 us / 168.31285 us / 0 / 0.00038 / 0.00075 / -0.31536
+    Q1 / 4.69465 GHz / 64.79709 us / 144.99572 us / 0 / 0.00039 / 0.00078 / -0.31007
+    Q2 / 4.66396 GHz / 64.568 us / 110.29726 us / 0 / 0.00066 / 0.00131 / -0.31424
+    Q3 / 4.65355 GHz / 105.80368 us / 128.37479 us / 0 / 0.00049 / 0.00097 / -0.31348
+    Q4 / 4.61082 GHz / 61.57265 us / 87.8425 us / 0 / 0.00063 / 0.00126 / -0.31314
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.00799
+    cx1_0 / cx / 0.00799
+    cx1_2 / cx / 0.01865
+    cx1_3 / cx / 0.01037
+    cx2_1 / cx / 0.01865
+    cx3_1 / cx / 0.01037
+    cx3_4 / cx / 0.01255
+    cx4_3 / cx / 0.01255
+
+ibmq_london
+===========
+Configuration
+-------------
+    n_qubits: 5
+    operational: False
+    status_msg: maintenance
+    pending_jobs: 2
+    backend_version: 1.1.3
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: [[0, 1], [1, 0], [1, 2], [1, 3], [2, 1], [3, 1], [3, 4], [4, 3]]
+    description: 5 qubit device London
+    credits_required: True
+    max_experiments: 75
+    conditional: False
+    url: None
+    backend_name: ibmq_london
+    meas_map: [[0, 1, 2, 3, 4]]
+    online_date: 2019-09-13 04:00:00+00:00
+    n_registers: 1
+    quantum_volume: 16
+    sample_name: Giraffe
+    allow_object_storage: True
+    memory: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 5.25402 GHz / 52.81248 us / 84.16906 us / 0 / 0.00039 / 0.00078 / -0.30722
+    Q1 / 5.04885 GHz / 64.39635 us / 73.05692 us / 0 / 0.00055 / 0.00109 / -0.3062
+    Q2 / 5.2303 GHz / 89.01345 us / 134.45666 us / 0 / 0.00041 / 0.00082 / -0.30664
+    Q3 / 5.20133 GHz / 80.4002 us / 132.2969 us / 0 / 0.00047 / 0.00095 / -0.30621
+    Q4 / 5.0659 GHz / 65.32881 us / 20.08789 us / 0 / 0.00032 / 0.00063 / -0.31062
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.00934
+    cx1_0 / cx / 0.00934
+    cx1_2 / cx / 0.01046
+    cx1_3 / cx / 0.01704
+    cx2_1 / cx / 0.01046
+    cx3_1 / cx / 0.01704
+    cx3_4 / cx / 0.01618
+    cx4_3 / cx / 0.01618
+
+ibmq_ourense
+============
+Configuration
+-------------
+    n_qubits: 5
+    operational: True
+    status_msg: active
+    pending_jobs: 18
+    backend_version: 1.2.0
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: [[0, 1], [1, 0], [1, 2], [1, 3], [2, 1], [3, 1], [3, 4], [4, 3]]
+    description: 5 qubit device Ourense
+    credits_required: True
+    max_experiments: 75
+    conditional: False
+    url: None
+    backend_name: ibmq_ourense
+    meas_map: [[0, 1, 2, 3, 4]]
+    online_date: 2019-07-03 04:00:00+00:00
+    n_registers: 1
+    quantum_volume: 8
+    sample_name: Giraffe
+    allow_object_storage: True
+    memory: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 4.8203 GHz / 98.15436 us / 63.66105 us / 0 / 0.00032 / 0.00064 / -0.31095
+    Q1 / 4.89017 GHz / 107.96818 us / 30.84224 us / 0 / 0.00036 / 0.00073 / -0.30678
+    Q2 / 4.71657 GHz / 91.78635 us / 111.43189 us / 0 / 0.00034 / 0.00067 / -0.31471
+    Q3 / 4.78907 GHz / 96.39177 us / 93.36071 us / 0 / 0.00038 / 0.00077 / -0.31109
+    Q4 / 5.02378 GHz / 50.09189 us / 23.32477 us / 0 / 0.00078 / 0.00156 / -0.3071
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.0064
+    cx1_0 / cx / 0.0064
+    cx1_2 / cx / 0.0089
+    cx1_3 / cx / 0.00945
+    cx2_1 / cx / 0.0089
+    cx3_1 / cx / 0.00945
+    cx3_4 / cx / 0.01458
+    cx4_3 / cx / 0.01458
+
+ibmq_qasm_simulator
+===================
+Configuration
+-------------
+    n_qubits: 32
+    operational: True
+    status_msg: active
+    pending_jobs: 2
+    backend_version: 0.1.547
+    basis_gates: ['u1', 'u2', 'u3', 'cx', 'cz', 'id', 'x', 'y', 'z', 'h', 's', 'sdg', 't', 'tdg', 'ccx', 'swap', 'unitary', 'initialize', 'kraus']
+    local: False
+    simulator: True
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: None
+    max_experiments: 300
+    conditional: True
+    backend_name: ibmq_qasm_simulator
+    online_date: 2019-05-02 08:15:00+00:00
+    allow_object_storage: True
+    memory: True
+
+ibmq_santiago
+=============
+Configuration
+-------------
+    n_qubits: 5
+    operational: True
+    status_msg: active
+    pending_jobs: 36
+    backend_version: 1.0.3
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    acquisition_latency: []
+    max_shots: 8192
+    dt: 2.2222222222222221e-10
+    dtm: 2.2222222222222221e-10
+    meas_levels: [1, 2]
+    credits_required: True
+    rep_times: [0.001]
+    channels: {'acquire0': {'operates': {'qubits': [0]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire1': {'operates': {'qubits': [1]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire2': {'operates': {'qubits': [2]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire3': {'operates': {'qubits': [3]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire4': {'operates': {'qubits': [4]}, 'purpose': 'acquire', 'type': 'acquire'}, 'd0': {'operates': {'qubits': [0]}, 'purpose': 'drive', 'type': 'drive'}, 'd1': {'operates': {'qubits': [1]}, 'purpose': 'drive', 'type': 'drive'}, 'd2': {'operates': {'qubits': [2]}, 'purpose': 'drive', 'type': 'drive'}, 'd3': {'operates': {'qubits': [3]}, 'purpose': 'drive', 'type': 'drive'}, 'd4': {'operates': {'qubits': [4]}, 'purpose': 'drive', 'type': 'drive'}, 'm0': {'operates': {'qubits': [0]}, 'purpose': 'measure', 'type': 'measure'}, 'm1': {'operates': {'qubits': [1]}, 'purpose': 'measure', 'type': 'measure'}, 'm2': {'operates': {'qubits': [2]}, 'purpose': 'measure', 'type': 'measure'}, 'm3': {'operates': {'qubits': [3]}, 'purpose': 'measure', 'type': 'measure'}, 'm4': {'operates': {'qubits': [4]}, 'purpose': 'measure', 'type': 'measure'}, 'u0': {'operates': {'qubits': [0, 1]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u1': {'operates': {'qubits': [1, 0]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u2': {'operates': {'qubits': [1, 2]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u3': {'operates': {'qubits': [2, 1]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u4': {'operates': {'qubits': [2, 3]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u5': {'operates': {'qubits': [3, 2]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u6': {'operates': {'qubits': [3, 4]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u7': {'operates': {'qubits': [4, 3]}, 'purpose': 'cross-resonance', 'type': 'control'}}
+    conditional: False
+    url: None
+    online_date: 2020-06-03 04:00:00+00:00
+    hamiltonian: {'description': 'Qubits are modeled as Duffing oscillators. In this case, the system includes higher energy states, i.e. not just |0> and |1>. The Pauli operators are generalized via the following set of transformations:\n\n$(\\mathbb{I}-\\sigma_{i}^z)/2 \\rightarrow O_i \\equiv b^\\dagger_{i} b_{i}$,\n\n$\\sigma_{+} \\rightarrow b^\\dagger$,\n\n$\\sigma_{-} \\rightarrow b$,\n\n$\\sigma_{i}^X \\rightarrow b^\\dagger_{i} + b_{i}$.\n\nQubits are coupled through resonator buses. The provided Hamiltonian has been projected into the zero excitation subspace of the resonator buses leading to an effective qubit-qubit flip-flop interaction. The qubit resonance frequencies in the Hamiltonian are the cavity dressed frequencies and not exactly what is returned by the backend defaults, which also includes the dressing due to the qubit-qubit interactions.\n\nQuantities are returned in angular frequencies, with units 2*pi*GHz.\n\nWARNING: Currently not all system Hamiltonian information is available to the public, missing values have been replaced with 0.\n', 'h_latex': '\\begin{align} \\mathcal{H}/\\hbar = & \\sum_{i=0}^{4}\\left(\\frac{\\omega_{q,i}}{2}(\\mathbb{I}-\\sigma_i^{z})+\\frac{\\Delta_{i}}{2}(O_i^2-O_i)+\\Omega_{d,i}D_i(t)\\sigma_i^{X}\\right) \\\\ & + J_{0,1}(\\sigma_{0}^{+}\\sigma_{1}^{-}+\\sigma_{0}^{-}\\sigma_{1}^{+}) + J_{3,4}(\\sigma_{3}^{+}\\sigma_{4}^{-}+\\sigma_{3}^{-}\\sigma_{4}^{+}) + J_{2,3}(\\sigma_{2}^{+}\\sigma_{3}^{-}+\\sigma_{2}^{-}\\sigma_{3}^{+}) + J_{1,2}(\\sigma_{1}^{+}\\sigma_{2}^{-}+\\sigma_{1}^{-}\\sigma_{2}^{+}) \\\\ & + \\Omega_{d,0}(U_{0}^{(0,1)}(t))\\sigma_{0}^{X} + \\Omega_{d,1}(U_{1}^{(1,0)}(t)+U_{2}^{(1,2)}(t))\\sigma_{1}^{X} \\\\ & + \\Omega_{d,2}(U_{3}^{(2,1)}(t)+U_{4}^{(2,3)}(t))\\sigma_{2}^{X} + \\Omega_{d,3}(U_{6}^{(3,4)}(t)+U_{5}^{(3,2)}(t))\\sigma_{3}^{X} \\\\ & + \\Omega_{d,4}(U_{7}^{(4,3)}(t))\\sigma_{4}^{X} \\\\ \\end{align}', 'h_str': ['_SUM[i,0,4,wq{i}/2*(I{i}-Z{i})]', '_SUM[i,0,4,delta{i}/2*O{i}*O{i}]', '_SUM[i,0,4,-delta{i}/2*O{i}]', '_SUM[i,0,4,omegad{i}*X{i}||D{i}]', 'jq0q1*Sp0*Sm1', 'jq0q1*Sm0*Sp1', 'jq3q4*Sp3*Sm4', 'jq3q4*Sm3*Sp4', 'jq2q3*Sp2*Sm3', 'jq2q3*Sm2*Sp3', 'jq1q2*Sp1*Sm2', 'jq1q2*Sm1*Sp2', 'omegad1*X0||U0', 'omegad0*X1||U1', 'omegad2*X1||U2', 'omegad1*X2||U3', 'omegad3*X2||U4', 'omegad4*X3||U6', 'omegad2*X3||U5', 'omegad3*X4||U7'], 'osc': {}, 'qub': {'0': 3, '1': 3, '2': 3, '3': 3, '4': 3}, 'vars': {'delta0': 0, 'delta1': 0, 'delta2': 0, 'delta3': 0, 'delta4': 0, 'jq0q1': 0.007378105608801839, 'jq1q2': 0.007268700678758498, 'jq2q3': 0.007255936195908655, 'jq3q4': 0.006881064755295536, 'omegad0': 0.49195764177526724, 'omegad1': 0.4783994507302347, 'omegad2': 0.48204308263187945, 'omegad3': 0.49119774119285725, 'omegad4': 0.4897812595109755, 'wq0': 30.369328895620818, 'wq1': 29.05103119582145, 'wq2': 30.28832928597499, 'wq3': 29.79685007501697, 'wq4': 30.261837732048303}}
+    u_channel_lo: [[{'q': 1, 'scale': (1+0j)}], [{'q': 0, 'scale': (1+0j)}], [{'q': 2, 'scale': (1+0j)}], [{'q': 1, 'scale': (1+0j)}], [{'q': 3, 'scale': (1+0j)}], [{'q': 2, 'scale': (1+0j)}], [{'q': 4, 'scale': (1+0j)}], [{'q': 3, 'scale': (1+0j)}]]
+    quantum_volume: 32
+    meas_kernels: ['boxcar']
+    conditional_latency: []
+    memory: True
+    open_pulse: False
+    allow_q_object: True
+    coupling_map: [[0, 1], [1, 0], [1, 2], [2, 1], [2, 3], [3, 2], [3, 4], [4, 3]]
+    description: 5 qubit device
+    n_uchannels: 8
+    meas_lo_range: [[6952624018.0, 7952624018.0], [6701014434.0, 7701014434.0], [6837332258.0, 7837332258.0], [6901770712.0, 7901770712.0], [6775814414.0, 7775814414.0]]
+    max_experiments: 75
+    discriminators: ['quadratic_discriminator', 'linear_discriminator']
+    parametric_pulses: ['gaussian', 'gaussian_square', 'drag', 'constant']
+    qubit_lo_range: [[4333428812.121584, 5333428812.121584], [4123615216.7318397, 5123615216.731839], [4320537323.857936, 5320537323.857936], [4242315978.0070624, 5242315978.007063], [4316321062.100319, 5316321062.100319]]
+    qubit_channel_mapping: [['d0', 'm0', 'u0', 'u1'], ['u0', 'u1', 'u3', 'd1', 'm1', 'u2'], ['u5', 'm2', 'u3', 'u4', 'u2', 'd2'], ['u6', 'u7', 'm3', 'd3', 'u5', 'u4'], ['u6', 'd4', 'u7', 'm4']]
+    dynamic_reprate_enabled: False
+    uchannels_enabled: True
+    backend_name: ibmq_santiago
+    meas_map: [[0, 1, 2, 3, 4]]
+    n_registers: 1
+    sample_name: Snake
+    allow_object_storage: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 4.83343 GHz / 124.09238 us / 156.27065 us / 0 / 0.00063 / 0.00127 / 0
+    Q1 / 4.62362 GHz / 134.40522 us / 99.72462 us / 0 / 0.00021 / 0.00041 / 0
+    Q2 / 4.82054 GHz / 151.96172 us / 97.06848 us / 0 / 0.0002 / 0.0004 / 0
+    Q3 / 4.74232 GHz / 147.04704 us / 76.44398 us / 0 / 0.00018 / 0.00036 / 0
+    Q4 / 4.81632 GHz / 147.89471 us / 207.8933 us / 0 / 0.00046 / 0.00093 / 0
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.01009
+    cx1_0 / cx / 0.01009
+    cx1_2 / cx / 0.00852
+    cx2_1 / cx / 0.00852
+    cx2_3 / cx / 0.00624
+    cx3_2 / cx / 0.00624
+    cx3_4 / cx / 0.00686
+    cx4_3 / cx / 0.00686
+
+ibmq_valencia
+=============
+Configuration
+-------------
+    n_qubits: 5
+    operational: True
+    status_msg: active
+    pending_jobs: 2
+    backend_version: 1.3.1
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    acquisition_latency: []
+    max_shots: 8192
+    dt: 2.2222222222222221e-10
+    dtm: 2.2222222222222221e-10
+    meas_levels: [1, 2]
+    credits_required: True
+    rep_times: [0.001]
+    channels: {'acquire0': {'operates': {'qubits': [0]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire1': {'operates': {'qubits': [1]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire2': {'operates': {'qubits': [2]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire3': {'operates': {'qubits': [3]}, 'purpose': 'acquire', 'type': 'acquire'}, 'acquire4': {'operates': {'qubits': [4]}, 'purpose': 'acquire', 'type': 'acquire'}, 'd0': {'operates': {'qubits': [0]}, 'purpose': 'drive', 'type': 'drive'}, 'd1': {'operates': {'qubits': [1]}, 'purpose': 'drive', 'type': 'drive'}, 'd2': {'operates': {'qubits': [2]}, 'purpose': 'drive', 'type': 'drive'}, 'd3': {'operates': {'qubits': [3]}, 'purpose': 'drive', 'type': 'drive'}, 'd4': {'operates': {'qubits': [4]}, 'purpose': 'drive', 'type': 'drive'}, 'm0': {'operates': {'qubits': [0]}, 'purpose': 'measure', 'type': 'measure'}, 'm1': {'operates': {'qubits': [1]}, 'purpose': 'measure', 'type': 'measure'}, 'm2': {'operates': {'qubits': [2]}, 'purpose': 'measure', 'type': 'measure'}, 'm3': {'operates': {'qubits': [3]}, 'purpose': 'measure', 'type': 'measure'}, 'm4': {'operates': {'qubits': [4]}, 'purpose': 'measure', 'type': 'measure'}, 'u0': {'operates': {'qubits': [0, 1]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u1': {'operates': {'qubits': [1, 0]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u2': {'operates': {'qubits': [1, 2]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u3': {'operates': {'qubits': [1, 3]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u4': {'operates': {'qubits': [2, 1]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u5': {'operates': {'qubits': [3, 1]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u6': {'operates': {'qubits': [3, 4]}, 'purpose': 'cross-resonance', 'type': 'control'}, 'u7': {'operates': {'qubits': [4, 3]}, 'purpose': 'cross-resonance', 'type': 'control'}}
+    conditional: False
+    url: None
+    online_date: 2019-07-03 04:00:00+00:00
+    hamiltonian: {'description': 'Qubits are modeled as Duffing oscillators. In this case, the system includes higher energy states, i.e. not just |0> and |1>. The Pauli operators are generalized via the following set of transformations:\n\n$(\\mathbb{I}-\\sigma_{i}^z)/2 \\rightarrow O_i \\equiv b^\\dagger_{i} b_{i}$,\n\n$\\sigma_{+} \\rightarrow b^\\dagger$,\n\n$\\sigma_{-} \\rightarrow b$,\n\n$\\sigma_{i}^X \\rightarrow b^\\dagger_{i} + b_{i}$.\n\nQubits are coupled through resonator buses. The provided Hamiltonian has been projected into the zero excitation subspace of the resonator buses leading to an effective qubit-qubit flip-flop interaction. The qubit resonance frequencies in the Hamiltonian are the cavity dressed frequencies and not exactly what is returned by the backend defaults, which also includes the dressing due to the qubit-qubit interactions.\n\nQuantities are returned in angular frequencies, with units 2*pi*GHz.\n\nWARNING: Currently not all system Hamiltonian information is available to the public, missing values have been replaced with 0.\n', 'h_latex': '\\begin{align} \\mathcal{H}/\\hbar = & \\sum_{i=0}^{4}\\left(\\frac{\\omega_{q,i}}{2}(\\mathbb{I}-\\sigma_i^{z})+\\frac{\\Delta_{i}}{2}(O_i^2-O_i)+\\Omega_{d,i}D_i(t)\\sigma_i^{X}\\right) \\\\ & + J_{0,1}(\\sigma_{0}^{+}\\sigma_{1}^{-}+\\sigma_{0}^{-}\\sigma_{1}^{+}) + J_{1,3}(\\sigma_{1}^{+}\\sigma_{3}^{-}+\\sigma_{1}^{-}\\sigma_{3}^{+}) + J_{3,4}(\\sigma_{3}^{+}\\sigma_{4}^{-}+\\sigma_{3}^{-}\\sigma_{4}^{+}) + J_{1,2}(\\sigma_{1}^{+}\\sigma_{2}^{-}+\\sigma_{1}^{-}\\sigma_{2}^{+}) \\\\ & + \\Omega_{d,0}(U_{0}^{(0,1)}(t))\\sigma_{0}^{X} + \\Omega_{d,1}(U_{1}^{(1,0)}(t)+U_{3}^{(1,3)}(t)+U_{2}^{(1,2)}(t))\\sigma_{1}^{X} \\\\ & + \\Omega_{d,2}(U_{4}^{(2,1)}(t))\\sigma_{2}^{X} + \\Omega_{d,3}(U_{5}^{(3,1)}(t)+U_{6}^{(3,4)}(t))\\sigma_{3}^{X} \\\\ & + \\Omega_{d,4}(U_{7}^{(4,3)}(t))\\sigma_{4}^{X} \\\\ \\end{align}', 'h_str': ['_SUM[i,0,4,wq{i}/2*(I{i}-Z{i})]', '_SUM[i,0,4,delta{i}/2*O{i}*O{i}]', '_SUM[i,0,4,-delta{i}/2*O{i}]', '_SUM[i,0,4,omegad{i}*X{i}||D{i}]', 'jq0q1*Sp0*Sm1', 'jq0q1*Sm0*Sp1', 'jq1q3*Sp1*Sm3', 'jq1q3*Sm1*Sp3', 'jq3q4*Sp3*Sm4', 'jq3q4*Sm3*Sp4', 'jq1q2*Sp1*Sm2', 'jq1q2*Sm1*Sp2', 'omegad1*X0||U0', 'omegad0*X1||U1', 'omegad3*X1||U3', 'omegad2*X1||U2', 'omegad1*X2||U4', 'omegad1*X3||U5', 'omegad4*X3||U6', 'omegad3*X4||U7'], 'osc': {}, 'qub': {'0': 3, '1': 3, '2': 3, '3': 3, '4': 3}, 'vars': {'delta0': -1.9720435789832655, 'delta1': -1.9511571834532064, 'delta2': -1.9566845436144944, 'delta3': -1.9453422952824684, 'delta4': -1.9444980545316484, 'jq0q1': 0.013906241266973622, 'jq1q2': 0.017963657950435953, 'jq1q3': 0.00795166827537871, 'jq3q4': 0.016099357950517968, 'omegad0': 0.49533974864226915, 'omegad1': 0.6402141105895544, 'omegad2': 0.5796299726866414, 'omegad3': 0.6471903061553184, 'omegad4': 0.6712321691353961, 'wq0': 29.806785511436015, 'wq1': 29.26229600460001, 'wq2': 30.1118429607397, 'wq3': 30.375553915626924, 'wq4': 31.161637513824324}}
+    u_channel_lo: [[{'q': 1, 'scale': (1+0j)}], [{'q': 0, 'scale': (1+0j)}], [{'q': 2, 'scale': (1+0j)}], [{'q': 3, 'scale': (1+0j)}], [{'q': 1, 'scale': (1+0j)}], [{'q': 1, 'scale': (1+0j)}], [{'q': 4, 'scale': (1+0j)}], [{'q': 3, 'scale': (1+0j)}]]
+    quantum_volume: 16
+    meas_kernels: ['boxcar']
+    conditional_latency: []
+    memory: True
+    open_pulse: False
+    allow_q_object: True
+    coupling_map: [[0, 1], [1, 0], [1, 2], [1, 3], [2, 1], [3, 1], [3, 4], [4, 3]]
+    description: 5 qubit device Valencia
+    n_uchannels: 8
+    meas_lo_range: [[6791423281.0, 7791423281.0], [6564734703.0, 7564734703.0], [6709148181.0, 7709148181.0], [6637515922.0, 7637515922.0], [6484029338.0, 7484029338.0]]
+    max_experiments: 75
+    discriminators: ['linear_discriminator', 'quadratic_discriminator']
+    parametric_pulses: ['gaussian', 'gaussian_square', 'drag', 'constant']
+    qubit_lo_range: [[4243897251.824929, 5243897251.824929], [4157239055.3503118, 5157239055.350311], [4292448652.808616, 5292448652.808617], [4334419554.826402, 5334419554.826402], [4459528645.162981, 5459528645.162981]]
+    qubit_channel_mapping: [['u0', 'd0', 'u1', 'm0'], ['u5', 'u1', 'u3', 'u0', 'm1', 'u2', 'u4', 'd1'], ['u4', 'd2', 'u2', 'm2'], ['u7', 'u5', 'u3', 'd3', 'u6', 'm3'], ['u7', 'u6', 'd4', 'm4']]
+    dynamic_reprate_enabled: False
+    uchannels_enabled: True
+    backend_name: ibmq_valencia
+    meas_map: [[0, 1, 2, 3, 4]]
+    n_registers: 1
+    sample_name: Giraffe
+    allow_object_storage: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 4.7439 GHz / 118.53135 us / 73.94478 us / 0 / 0.00063 / 0.00125 / -0.31386
+    Q1 / 4.65724 GHz / 124.45103 us / 40.59106 us / 0 / 0.00059 / 0.00118 / -0.31054
+    Q2 / 4.79245 GHz / 97.68576 us / 46.47877 us / 0 / 0.00049 / 0.00098 / -0.31142
+    Q3 / 4.83442 GHz / 89.47031 us / 23.2833 us / 0 / 0.0005 / 0.001 / -0.30961
+    Q4 / 4.95953 GHz / 76.24381 us / 122.65773 us / 0 / 0.00042 / 0.00084 / -0.30948
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.03101
+    cx1_0 / cx / 0.03101
+    cx1_2 / cx / 0.01724
+    cx1_3 / cx / 0.01822
+    cx2_1 / cx / 0.01724
+    cx3_1 / cx / 0.01822
+    cx3_4 / cx / 0.00987
+    cx4_3 / cx / 0.00987
+
+ibmq_vigo
+=========
+Configuration
+-------------
+    n_qubits: 5
+    operational: True
+    status_msg: active
+    pending_jobs: 1
+    backend_version: 1.2.1
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: [[0, 1], [1, 0], [1, 2], [1, 3], [2, 1], [3, 1], [3, 4], [4, 3]]
+    description: 5 qubit device Vigo
+    credits_required: True
+    max_experiments: 75
+    conditional: False
+    url: None
+    backend_name: ibmq_vigo
+    meas_map: [[0, 1, 2, 3, 4]]
+    online_date: 2019-07-03 04:00:00+00:00
+    n_registers: 1
+    quantum_volume: 16
+    sample_name: Giraffe
+    allow_object_storage: True
+    memory: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 4.79661 GHz / 133.46024 us / 20.36446 us / 0 / 0.00034 / 0.00067 / -0.31157
+    Q1 / 4.94013 GHz / 105.42576 us / 104.09567 us / 0 / 0.00051 / 0.00103 / -0.30543
+    Q2 / 4.83351 GHz / 121.61903 us / 113.94445 us / 0 / 0.00047 / 0.00094 / -0.31029
+    Q3 / 4.80796 GHz / 89.1669 us / 86.51955 us / 0 / 0.00075 / 0.0015 / -0.31069
+    Q4 / 4.74968 GHz / 88.54716 us / 45.26385 us / 0 / 0.00086 / 0.00172 / -0.3123
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.01174
+    cx1_0 / cx / 0.01174
+    cx1_2 / cx / 0.00761
+    cx1_3 / cx / 0.01129
+    cx2_1 / cx / 0.00761
+    cx3_1 / cx / 0.01129
+    cx3_4 / cx / 0.00682
+    cx4_3 / cx / 0.00682
+
+ibmqx2
+======
+Configuration
+-------------
+    n_qubits: 5
+    operational: True
+    status_msg: active
+    pending_jobs: 6
+    backend_version: 2.1.0
+    basis_gates: ['id', 'u1', 'u2', 'u3', 'cx']
+    local: False
+    simulator: False
+    open_pulse: False
+    max_shots: 8192
+    allow_q_object: True
+    coupling_map: [[0, 1], [0, 2], [1, 0], [1, 2], [2, 0], [2, 1], [2, 3], [2, 4], [3, 2], [3, 4], [4, 2], [4, 3]]
+    description: 5 qubit device
+    credits_required: True
+    max_experiments: 75
+    conditional: False
+    url: None
+    backend_name: ibmqx2
+    meas_map: [[0, 1, 2, 3, 4]]
+    online_date: 2017-01-24 05:00:00+00:00
+    n_registers: 1
+    quantum_volume: 8
+    sample_name: sparrow
+    allow_object_storage: True
+    memory: True
+
+Qubits [Name / Freq / T1 / T2 / U1 err / U2 err / U3 err / Readout err]
+-----------------------------------------------------------------------
+    Q0 / 5.28293 GHz / 57.87843 us / 26.0454 us / 0 / 0.00159 / 0.00318 / 0
+    Q1 / 5.24763 GHz / 56.39929 us / 24.67327 us / 0 / 0.00098 / 0.00197 / 0
+    Q2 / 5.0338 GHz / 42.60052 us / 71.2931 us / 0 / 0.00049 / 0.00097 / 0
+    Q3 / 5.29225 GHz / 60.13646 us / 38.95896 us / 0 / 0.00056 / 0.00112 / 0
+    Q4 / 5.07848 GHz / 61.11736 us / 41.0934 us / 0 / 0.00047 / 0.00093 / 0
+
+Multi-Qubit Gates [Name / Type / Gate Error]
+--------------------------------------------
+    cx0_1 / cx / 0.02261
+    cx0_2 / cx / 0.01722
+    cx1_0 / cx / 0.02261
+    cx1_2 / cx / 0.02343
+    cx2_0 / cx / 0.01722
+    cx2_1 / cx / 0.02343
+    cx2_3 / cx / 0.02038
+    cx2_4 / cx / 0.01643
+    cx3_2 / cx / 0.02038
+    cx3_4 / cx / 0.01728
+    cx4_2 / cx / 0.01643
+    cx4_3 / cx / 0.01728
+

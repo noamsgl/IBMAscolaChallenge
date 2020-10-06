@@ -1,5 +1,4 @@
 import os
-
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsRegressor
@@ -20,6 +19,8 @@ df = U3Dataset(save_dir=save_dir)
 # df = RXDataset(save_dir=save_dir)
 
 # Regression Task
+
+
 X = df[['theta', 'phi', 'lam', 'E']]  # use this for U3
 # X = df[['rx_theta', 'E']] # use this for RX
 y = df[['p']]
