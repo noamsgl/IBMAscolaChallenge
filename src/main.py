@@ -2,7 +2,7 @@ import os
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsRegressor
-from src.DatasetGenerator import U3Dataset
+from src.recycle_bin.DatasetGenerator import U3Dataset
 
 # Get New Saving Directory (dataset will be saved there)
 reading_file = open("../outputs/config.txt", 'r')
