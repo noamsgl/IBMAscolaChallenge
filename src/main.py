@@ -21,7 +21,7 @@ df = U3Dataset(save_dir=save_dir)
 # Regression Task
 
 
-X = df[['theta', 'phi', 'lam', 'E']]  # use this for U3
+X = df[['theta', 'phi', 'lam', 'E']]  # use this for universal_error
 # X = df[['rx_theta', 'E']] # use this for RX
 y = df[['p']]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)

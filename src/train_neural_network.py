@@ -6,7 +6,7 @@ import torch.nn as nn
 # Get New Saving Directory (dataset will be saved there)
 
 # Load Dataset
-df = pd.read_csv('../datasets/U3_13_13.csv')
+df = pd.read_csv('../datasets/depol_error/U3_13_13.csv')
 X_df = df[['theta', 'phi', 'lam', 'E']]
 y_df = df['p']
 

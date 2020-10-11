@@ -80,7 +80,7 @@ def get_noise_model_params(K=10):
 def U3Dataset(angle_step=9, other_steps=10, shots=1024, *noise_list, save_dir=None):
     df = pd.DataFrame()
 
-    # iterate over all U3 gates
+    # iterate over all universal_error gates
     for theta, phi, lam in tqdm(itertools.product(np.linspace(0, 2 * np.pi, angle_step, endpoint=True), repeat=3)):
         # Generate sample data
         circ = QuantumCircuit(1, 1)
@@ -104,4 +104,4 @@ for n in range(2, 20):
     angle_step = n
     other_steps = n
     U3Dataset(angle_step=angle_step, other_steps=other_steps,
-              save_dir='../datasets/U3/U3_{}_{}.csv'.format(angle_step, other_steps))
+              save_dir='../datasets/universal_error/U3_{}_{}.csv'.format(angle_step, other_steps))

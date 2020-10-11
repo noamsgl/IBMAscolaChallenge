@@ -23,7 +23,7 @@ for be in provider.backends():
         print("t1: " + str(t1))
         print("t2: " + str(t2))
         print("freq: " + str(freq))
-        print("U3 gate length: " + str(u3_length))
+        print("universal_error gate length: " + str(u3_length))
 
         # depol
         device_gate_params = gate_param_values(properties)
