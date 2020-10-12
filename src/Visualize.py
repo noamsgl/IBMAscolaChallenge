@@ -32,5 +32,5 @@ def data_dist(data, bins=50, path=False):
 
 
 if __name__ == "__main__":
-    data = pd.read_csv(r'../datasets/universal_error/U3_6_6.csv', index_col=[0])
+    data = pd.read_csv(r'../datasets/universal_error/V1/U3_6_6.csv', index_col=[0])
     data_dist(data, path="../graphics/U3_6_6_graphics")

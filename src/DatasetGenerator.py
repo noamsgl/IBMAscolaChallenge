@@ -46,7 +46,7 @@ def get_data_point(theta, phi, lam, readout_params, depol_param, thermal_params,
                   't1': t1,
                   't2': t2,
                   'population': population,
-                  'E': result.get_counts(0).get('0', 0) / shots}
+                  'E': result.get_counts(0).get('1', 0) / shots}
 
     return data_point
 
@@ -64,15 +64,15 @@ def get_noise_model_params(K=10):
             readout_params = (p0_0, p1_0), (p0_1, p1_1)
 
             # thermal
-            for t1 in np.linspace(64845, 93206, K, endpoint=True):
-                for t2 in np.linspace(t1 / 4, t1 / 2, K, endpoint=False):
+            for t1 in np.linspace(34000, 190000, K, endpoint=True):
+                for t2 in np.linspace(t1 / 5.6, t1 / 0.65, K, endpoint=True):
 
                     # for population in np.linspace(0, 1, K, endpoint=True):
                     population = 0
                     thermal_params = (t1, t2, population)
 
                     # depol
-                    for depol_param in np.linspace(0, 1, K, endpoint=True):
+                    for depol_param in np.linspace(0, 0.001, K, endpoint=True):
                         noise_model_params.append((readout_params, depol_param, thermal_params))
     return noise_model_params
 
@@ -88,7 +88,7 @@ def U3Dataset(angle_step=9, other_steps=10, shots=1024, *noise_list, save_dir=No
         circ.measure(0, 0)
         new_circ = qiskit.compiler.transpile(circ, basis_gates=['u3'], optimization_level=0)
         print('\n', new_circ)
-        for readout_params, depol_param, thermal_params in tqdm(get_noise_model_params(other_steps)):
+        for readout_params, depol_param, thermal_params in get_noise_model_params(other_steps):
             data_point = get_data_point(theta, phi, lam, readout_params, depol_param, thermal_params, shots)
             df = df.append(data_point, ignore_index=True)
 
@@ -100,8 +100,8 @@ def U3Dataset(angle_step=9, other_steps=10, shots=1024, *noise_list, save_dir=No
     return df
 
 
-for n in range(2, 20):
+for n in range(5, 7):
     angle_step = n
     other_steps = n
     U3Dataset(angle_step=angle_step, other_steps=other_steps,
-              save_dir='../datasets/universal_error/U3_{}_{}.csv'.format(angle_step, other_steps))
+              save_dir='../datasets/universal_error/V2/U3_{}.csv'.format(angle_step))
