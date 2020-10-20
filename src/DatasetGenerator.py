@@ -153,7 +153,8 @@ if __name__ == '__main__':
 
 
     # log to output file
-    output_file_handler = logging.FileHandler("../logs/output.log", mode='w', encoding='utf-8')
+    log_file_path = "../logs/output_{}.log".format(time.strftime("%Y%m%d-%H%M%S"))
+    output_file_handler = logging.FileHandler(log_file_path, mode='w', encoding='utf-8')
     output_file_handler.setFormatter(formatter)
     a_logger.addHandler(output_file_handler)
 
