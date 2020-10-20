@@ -1,0 +1,60 @@
+20-10-20 17:18:34; Starting dataset generation with resolution n = 2.
+20-10-20 17:18:34; Generating data points for circuit:
+     ┌───────────┐┌─┐
+q_0: ┤ U3(0,0,0) ├┤M├
+     └───────────┘└╥┘
+c_0: ══════════════╩═
+                     
+20-10-20 17:18:36; Last circuit took: 1.61 seconds.
+20-10-20 17:18:36; Generating data points for circuit:
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(0,0,2pi) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-20 17:18:38; Last circuit took: 1.61 seconds.
+20-10-20 17:18:38; Generating data points for circuit:
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(0,2pi,0) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-20 17:18:39; Last circuit took: 1.50 seconds.
+20-10-20 17:18:39; Generating data points for circuit:
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(0,2pi,2pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-20 17:18:41; Last circuit took: 1.54 seconds.
+20-10-20 17:18:41; Generating data points for circuit:
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(2pi,0,0) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-20 17:18:42; Last circuit took: 1.58 seconds.
+20-10-20 17:18:42; Generating data points for circuit:
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(2pi,0,2pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-20 17:18:44; Last circuit took: 1.55 seconds.
+20-10-20 17:18:44; Generating data points for circuit:
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(2pi,2pi,0) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-20 17:18:45; Last circuit took: 1.55 seconds.
+20-10-20 17:18:45; Generating data points for circuit:
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(2pi,2pi,2pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-20 17:18:47; Last circuit took: 1.56 seconds.
+20-10-20 17:18:47; Finished dataset generation with resolution n = 2.
+20-10-20 17:18:47; Dataset saved to ../datasets/universal_error/AllErrors/U3_2.csv
+20-10-20 17:18:47; Exiting Gracefully
