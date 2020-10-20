@@ -98,7 +98,10 @@ def get_noise_model_params(K=10, readout=True, thermal=True, depol=True):
 
 
 def U3Dataset(angle_step=10, other_steps=10, shots=4096, readout=True, thermal=True, depol=True, save_dir=None):
-    df = pd.DataFrame()
+    # the dictionary to pass to pandas dataframe
+    data = {}
+    #  a counter to use to add entries to "data"
+    i = 0
 
     # Iterate over all U3 gates
     for theta, phi, lam in tqdm(product(np.linspace(0, 2 * np.pi, angle_step, endpoint=True), repeat=3)):
@@ -109,7 +112,21 @@ def U3Dataset(angle_step=10, other_steps=10, shots=4096, readout=True, thermal=T
         print('\n', circ)
         for readout_params, depol_param, thermal_params in get_noise_model_params(other_steps, readout, thermal, depol):
             data_point = get_data_point(circ, theta, phi, lam, readout_params, depol_param, thermal_params, shots)
-            df = df.append(data_point, ignore_index=True)
+            data[i] = {'theta': data_point['theta'],
+                       'phi': data_point['phi'],
+                       'lam': data_point['lam'],
+                       'p0_0': data_point['p0_0'],
+                       'p1_0': data_point['p1_0'],
+                       'p0_1': data_point['p0_1'],
+                       'p1_1': data_point['p1_1'],
+                       'depol_prob': data_point['depol_prob'],
+                       't1': data_point['t1'],
+                       't2': data_point['t2'],
+                       'population': data_point['population'],
+                       'E': data_point['E']}
+            i = i + 1
+    # set the 'orient' parameter to "index" to make the keys as rows
+    df = pd.DataFrame.from_dict(data, "index")
     # Save to CSV
     if save_dir is not None:
         df.to_csv(save_dir)
