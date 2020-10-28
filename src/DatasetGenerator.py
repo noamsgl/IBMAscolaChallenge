@@ -1,4 +1,3 @@
-import atexit
 import logging
 import sys
 import time
@@ -100,21 +99,23 @@ def get_noise_model_params(K=10, readout=True, thermal=True, depol=True):
     return noise_model_params"""
 
 
-def U3Dataset(angle_step=10, other_steps=10, shots=4096, readout=True, thermal=True, depol=True, save_dir=None):
+def U3Dataset(angle_step=10, other_steps=10, shots=2048, readout=True, thermal=True, depol=True, save_dir=None):
+    a_logger = logging.getLogger(__name__)
     # the dictionary to pass to pandas dataframe
     data = {}
     #  a counter to use to add entries to "data"
     i = 0
+    # a counter to use to log circuit number
+    j = 0
 
     # Iterate over all U3 gates
     for theta, phi, lam in product(np.linspace(0, 2 * np.pi, angle_step, endpoint=True), repeat=3):
-        a_logger = logging.getLogger(__name__)
-
+        j = j + 1
         # Generate sample data
         circ = QuantumCircuit(1, 1)
         circ.append(U3Gate(theta, phi, lam), [0])
         circ.measure(0, 0)
-        a_logger.info("Generating data points for circuit:\n" + str(circ))
+        a_logger.info("Generating data points for circuit: {}/{}\n".format(j, angle_step ** 3) + str(circ))
         start_time = time.time()
         for readout_params, depol_param, thermal_params in get_noise_model_params(other_steps, readout, thermal, depol):
             data_point = get_data_point(circ, theta, phi, lam, readout_params, depol_param, thermal_params, shots)
@@ -151,7 +152,6 @@ if __name__ == '__main__':
     a_logger = logging.getLogger(__name__)
     a_logger.setLevel(logging.INFO)
 
-
     # log to output file
     log_file_path = "../logs/output_{}.log".format(time.strftime("%Y%m%d-%H%M%S"))
     output_file_handler = logging.FileHandler(log_file_path, mode='w', encoding='utf-8')
@@ -163,13 +163,13 @@ if __name__ == '__main__':
     stdout_handler.setFormatter(formatter)
     a_logger.addHandler(stdout_handler)
 
-    for n in [2]:
-        save_dir = '../datasets/universal_error/AllErrors/U3_{}.csv'.format(n)
-        a_logger.info("Starting dataset generation with resolution n = {}.".format(n))
+    for n, m in [(5, 5)]:
+        save_dir = '../datasets/universal_error/AllErrors/U3_{}_{}_no_thermal.csv'.format(n, m)
+        a_logger.info("Starting dataset generation with resolution n = {}, m = {}.".format(n, m))
         angle_step = n
-        other_steps = n
+        other_steps = m
         U3Dataset(angle_step=angle_step, other_steps=other_steps, readout=True, thermal=True, depol=True,
                   save_dir=save_dir)
-        a_logger.info("Finished dataset generation with resolution n = {}.".format(n))
+        a_logger.info("Finished dataset generation with resolution n = {}, m = {}.".format(n, m))
         a_logger.info("Dataset saved to {}".format(save_dir))
     a_logger.info("Exiting Gracefully")
