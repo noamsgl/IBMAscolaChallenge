@@ -61,14 +61,17 @@ def get_noise_model_params(K=10, readout=True, thermal=True, depol=True):
             readout_params = (p0_0, p1_0), (p0_1, p1_1)
 
             # Thermal Error
-            for t1 in np.linspace(34000, 190000, K, endpoint=True):
-                for t2 in np.linspace(t1 / 5.6, t1 / 0.65, K, endpoint=True):
-                    for population in np.linspace(0, 1, K, endpoint=True):
-                        thermal_params = (t1, t2, population)
-
-                        # Depolarizing Error
-                        for depol_param in np.linspace(0, 0.001, K, endpoint=True):
-                            noise_model_params.append((readout_params, depol_param, thermal_params))
+            # for t1 in np.itertools.chain(np.linspace(34000, 190000, K, endpoint=True), np.inf):
+            #     for t2 in np.linspace(t1 / 5.6, t1 / 0.65, K, endpoint=True):
+            #         for population in np.linspace(0, 1, K, endpoint=True):
+            #             thermal_params = (t1, t2, population)
+            t1 = np.inf
+            t2 = np.inf
+            population = 0
+            thermal_params = (t1, t2, population)
+            # Depolarizing Error
+            for depol_param in np.linspace(0, 0.001, K, endpoint=True):
+                noise_model_params.append((readout_params, depol_param, thermal_params))
     return noise_model_params
 
     # Inefficient implementation. Don't Use...
