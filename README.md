@@ -39,6 +39,6 @@ Finally, we explored the synthetic datasets produced using [Jupyter Notebooks](n
 * [Ascola](https://www.madaney.net/en/site/programs/ascola/) 
 * [Qiskit](https://qiskit.org/)
   
-<img src="images/ibm_logo.png" width="60" height="60">
+<img src="images/ibm_logo.png" width="80" height="60">
 <img src="images/ascola_logo.png" width="60" height="60">
-<img src="images/qiskit_logo.png" width="60" height="60">
+<img src="images/qiskit_logo.png" width="140" height="60">
