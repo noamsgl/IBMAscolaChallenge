@@ -1,0 +1,879 @@
+20-10-26 15:15:29; Starting dataset generation with resolution n = 5, m = 5.
+20-10-26 15:15:29; Generating data points for circuit: 1/125
+     ┌───────────┐┌─┐
+q_0: ┤ U3(0,0,0) ├┤M├
+     └───────────┘└╥┘
+c_0: ══════════════╩═
+                     
+20-10-26 15:15:32; Last circuit took: 2.29 seconds.
+20-10-26 15:15:32; Generating data points for circuit: 2/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(0,0,pi/2) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:15:32; Last circuit took: 0.91 seconds.
+20-10-26 15:15:32; Generating data points for circuit: 3/125
+     ┌────────────┐┌─┐
+q_0: ┤ U3(0,0,pi) ├┤M├
+     └────────────┘└╥┘
+c_0: ═══════════════╩═
+                      
+20-10-26 15:15:33; Last circuit took: 0.84 seconds.
+20-10-26 15:15:33; Generating data points for circuit: 4/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(0,0,3pi/2) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:15:34; Last circuit took: 0.84 seconds.
+20-10-26 15:15:34; Generating data points for circuit: 5/125
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(0,0,2pi) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-26 15:15:36; Last circuit took: 2.29 seconds.
+20-10-26 15:15:36; Generating data points for circuit: 6/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(0,pi/2,0) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:15:37; Last circuit took: 0.91 seconds.
+20-10-26 15:15:37; Generating data points for circuit: 7/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(0,pi/2,pi/2) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:15:38; Last circuit took: 0.80 seconds.
+20-10-26 15:15:38; Generating data points for circuit: 8/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(0,pi/2,pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:15:39; Last circuit took: 0.78 seconds.
+20-10-26 15:15:39; Generating data points for circuit: 9/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(0,pi/2,3pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:15:41; Last circuit took: 2.15 seconds.
+20-10-26 15:15:41; Generating data points for circuit: 10/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(0,pi/2,2pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:15:42; Last circuit took: 0.85 seconds.
+20-10-26 15:15:42; Generating data points for circuit: 11/125
+     ┌────────────┐┌─┐
+q_0: ┤ U3(0,pi,0) ├┤M├
+     └────────────┘└╥┘
+c_0: ═══════════════╩═
+                      
+20-10-26 15:15:43; Last circuit took: 0.77 seconds.
+20-10-26 15:15:43; Generating data points for circuit: 12/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(0,pi,pi/2) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:15:43; Last circuit took: 0.79 seconds.
+20-10-26 15:15:43; Generating data points for circuit: 13/125
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(0,pi,pi) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-26 15:15:46; Last circuit took: 2.11 seconds.
+20-10-26 15:15:46; Generating data points for circuit: 14/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(0,pi,3pi/2) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:15:46; Last circuit took: 0.84 seconds.
+20-10-26 15:15:46; Generating data points for circuit: 15/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(0,pi,2pi) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:15:47; Last circuit took: 0.77 seconds.
+20-10-26 15:15:47; Generating data points for circuit: 16/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(0,3pi/2,0) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:15:48; Last circuit took: 0.77 seconds.
+20-10-26 15:15:48; Generating data points for circuit: 17/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(0,3pi/2,pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:15:50; Last circuit took: 2.13 seconds.
+20-10-26 15:15:50; Generating data points for circuit: 18/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(0,3pi/2,pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:15:51; Last circuit took: 0.85 seconds.
+20-10-26 15:15:51; Generating data points for circuit: 19/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(0,3pi/2,3pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:15:52; Last circuit took: 0.77 seconds.
+20-10-26 15:15:52; Generating data points for circuit: 20/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(0,3pi/2,2pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:15:52; Last circuit took: 0.77 seconds.
+20-10-26 15:15:52; Generating data points for circuit: 21/125
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(0,2pi,0) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-26 15:15:55; Last circuit took: 2.14 seconds.
+20-10-26 15:15:55; Generating data points for circuit: 22/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(0,2pi,pi/2) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:15:55; Last circuit took: 0.84 seconds.
+20-10-26 15:15:55; Generating data points for circuit: 23/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(0,2pi,pi) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:15:56; Last circuit took: 0.78 seconds.
+20-10-26 15:15:56; Generating data points for circuit: 24/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(0,2pi,3pi/2) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:15:57; Last circuit took: 0.78 seconds.
+20-10-26 15:15:57; Generating data points for circuit: 25/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(0,2pi,2pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:15:59; Last circuit took: 2.14 seconds.
+20-10-26 15:15:59; Generating data points for circuit: 26/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(pi/2,0,0) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:16:00; Last circuit took: 0.86 seconds.
+20-10-26 15:16:00; Generating data points for circuit: 27/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi/2,0,pi/2) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:01; Last circuit took: 0.77 seconds.
+20-10-26 15:16:01; Generating data points for circuit: 28/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(pi/2,0,pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:16:02; Last circuit took: 0.78 seconds.
+20-10-26 15:16:02; Generating data points for circuit: 29/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi/2,0,3pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:02; Last circuit took: 0.78 seconds.
+20-10-26 15:16:02; Generating data points for circuit: 30/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi/2,0,2pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:03; Last circuit took: 0.77 seconds.
+20-10-26 15:16:03; Generating data points for circuit: 31/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi/2,0) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:04; Last circuit took: 0.78 seconds.
+20-10-26 15:16:04; Generating data points for circuit: 32/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi/2,pi/2) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:05; Last circuit took: 0.78 seconds.
+20-10-26 15:16:05; Generating data points for circuit: 33/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi/2,pi) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:05; Last circuit took: 0.78 seconds.
+20-10-26 15:16:05; Generating data points for circuit: 34/125
+     ┌─────────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi/2,3pi/2) ├┤M├
+     └─────────────────────┘└╥┘
+c_0: ════════════════════════╩═
+                               
+20-10-26 15:16:06; Last circuit took: 0.78 seconds.
+20-10-26 15:16:06; Generating data points for circuit: 35/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi/2,2pi) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:07; Last circuit took: 0.78 seconds.
+20-10-26 15:16:07; Generating data points for circuit: 36/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi,0) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:16:08; Last circuit took: 0.78 seconds.
+20-10-26 15:16:08; Generating data points for circuit: 37/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi,pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:09; Last circuit took: 0.78 seconds.
+20-10-26 15:16:09; Generating data points for circuit: 38/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi,pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:09; Last circuit took: 0.78 seconds.
+20-10-26 15:16:09; Generating data points for circuit: 39/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi,3pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:10; Last circuit took: 0.78 seconds.
+20-10-26 15:16:10; Generating data points for circuit: 40/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi/2,pi,2pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:11; Last circuit took: 0.77 seconds.
+20-10-26 15:16:11; Generating data points for circuit: 41/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi/2,3pi/2,0) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:12; Last circuit took: 0.78 seconds.
+20-10-26 15:16:12; Generating data points for circuit: 42/125
+     ┌─────────────────────┐┌─┐
+q_0: ┤ U3(pi/2,3pi/2,pi/2) ├┤M├
+     └─────────────────────┘└╥┘
+c_0: ════════════════════════╩═
+                               
+20-10-26 15:16:12; Last circuit took: 0.77 seconds.
+20-10-26 15:16:12; Generating data points for circuit: 43/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(pi/2,3pi/2,pi) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:13; Last circuit took: 0.78 seconds.
+20-10-26 15:16:13; Generating data points for circuit: 44/125
+     ┌──────────────────────┐┌─┐
+q_0: ┤ U3(pi/2,3pi/2,3pi/2) ├┤M├
+     └──────────────────────┘└╥┘
+c_0: ═════════════════════════╩═
+                                
+20-10-26 15:16:14; Last circuit took: 0.78 seconds.
+20-10-26 15:16:14; Generating data points for circuit: 45/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(pi/2,3pi/2,2pi) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:15; Last circuit took: 0.77 seconds.
+20-10-26 15:16:15; Generating data points for circuit: 46/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi/2,2pi,0) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:16; Last circuit took: 0.77 seconds.
+20-10-26 15:16:16; Generating data points for circuit: 47/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(pi/2,2pi,pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:16; Last circuit took: 0.78 seconds.
+20-10-26 15:16:16; Generating data points for circuit: 48/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi/2,2pi,pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:17; Last circuit took: 0.78 seconds.
+20-10-26 15:16:17; Generating data points for circuit: 49/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(pi/2,2pi,3pi/2) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:18; Last circuit took: 0.79 seconds.
+20-10-26 15:16:18; Generating data points for circuit: 50/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi/2,2pi,2pi) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:19; Last circuit took: 0.81 seconds.
+20-10-26 15:16:19; Generating data points for circuit: 51/125
+     ┌────────────┐┌─┐
+q_0: ┤ U3(pi,0,0) ├┤M├
+     └────────────┘└╥┘
+c_0: ═══════════════╩═
+                      
+20-10-26 15:16:20; Last circuit took: 0.83 seconds.
+20-10-26 15:16:20; Generating data points for circuit: 52/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(pi,0,pi/2) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:16:20; Last circuit took: 0.79 seconds.
+20-10-26 15:16:20; Generating data points for circuit: 53/125
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(pi,0,pi) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-26 15:16:21; Last circuit took: 0.78 seconds.
+20-10-26 15:16:21; Generating data points for circuit: 54/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi,0,3pi/2) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:22; Last circuit took: 0.77 seconds.
+20-10-26 15:16:22; Generating data points for circuit: 55/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(pi,0,2pi) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:16:23; Last circuit took: 0.78 seconds.
+20-10-26 15:16:23; Generating data points for circuit: 56/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(pi,pi/2,0) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:16:23; Last circuit took: 0.77 seconds.
+20-10-26 15:16:23; Generating data points for circuit: 57/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi,pi/2,pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:24; Last circuit took: 0.78 seconds.
+20-10-26 15:16:24; Generating data points for circuit: 58/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi,pi/2,pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:25; Last circuit took: 0.78 seconds.
+20-10-26 15:16:25; Generating data points for circuit: 59/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(pi,pi/2,3pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:26; Last circuit took: 0.78 seconds.
+20-10-26 15:16:26; Generating data points for circuit: 60/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi,pi/2,2pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:27; Last circuit took: 0.78 seconds.
+20-10-26 15:16:27; Generating data points for circuit: 61/125
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(pi,pi,0) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-26 15:16:27; Last circuit took: 0.78 seconds.
+20-10-26 15:16:27; Generating data points for circuit: 62/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi,pi,pi/2) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:28; Last circuit took: 0.80 seconds.
+20-10-26 15:16:28; Generating data points for circuit: 63/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(pi,pi,pi) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:16:29; Last circuit took: 0.81 seconds.
+20-10-26 15:16:29; Generating data points for circuit: 64/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi,pi,3pi/2) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:30; Last circuit took: 0.78 seconds.
+20-10-26 15:16:30; Generating data points for circuit: 65/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(pi,pi,2pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:16:31; Last circuit took: 0.78 seconds.
+20-10-26 15:16:31; Generating data points for circuit: 66/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi,3pi/2,0) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:31; Last circuit took: 0.78 seconds.
+20-10-26 15:16:31; Generating data points for circuit: 67/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(pi,3pi/2,pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:32; Last circuit took: 0.78 seconds.
+20-10-26 15:16:32; Generating data points for circuit: 68/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi,3pi/2,pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:33; Last circuit took: 0.78 seconds.
+20-10-26 15:16:33; Generating data points for circuit: 69/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(pi,3pi/2,3pi/2) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:34; Last circuit took: 0.79 seconds.
+20-10-26 15:16:34; Generating data points for circuit: 70/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi,3pi/2,2pi) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:34; Last circuit took: 0.78 seconds.
+20-10-26 15:16:34; Generating data points for circuit: 71/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(pi,2pi,0) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:16:35; Last circuit took: 0.79 seconds.
+20-10-26 15:16:35; Generating data points for circuit: 72/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(pi,2pi,pi/2) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:36; Last circuit took: 0.78 seconds.
+20-10-26 15:16:36; Generating data points for circuit: 73/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(pi,2pi,pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:16:37; Last circuit took: 0.78 seconds.
+20-10-26 15:16:37; Generating data points for circuit: 74/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(pi,2pi,3pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:38; Last circuit took: 0.79 seconds.
+20-10-26 15:16:38; Generating data points for circuit: 75/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(pi,2pi,2pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:38; Last circuit took: 0.81 seconds.
+20-10-26 15:16:38; Generating data points for circuit: 76/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(3pi/2,0,0) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:16:39; Last circuit took: 0.83 seconds.
+20-10-26 15:16:39; Generating data points for circuit: 77/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,0,pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:40; Last circuit took: 0.82 seconds.
+20-10-26 15:16:40; Generating data points for circuit: 78/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,0,pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:41; Last circuit took: 0.80 seconds.
+20-10-26 15:16:41; Generating data points for circuit: 79/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,0,3pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:42; Last circuit took: 0.83 seconds.
+20-10-26 15:16:42; Generating data points for circuit: 80/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,0,2pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:43; Last circuit took: 0.81 seconds.
+20-10-26 15:16:43; Generating data points for circuit: 81/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi/2,0) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:43; Last circuit took: 0.78 seconds.
+20-10-26 15:16:43; Generating data points for circuit: 82/125
+     ┌─────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi/2,pi/2) ├┤M├
+     └─────────────────────┘└╥┘
+c_0: ════════════════════════╩═
+                               
+20-10-26 15:16:44; Last circuit took: 0.79 seconds.
+20-10-26 15:16:44; Generating data points for circuit: 83/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi/2,pi) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:45; Last circuit took: 0.79 seconds.
+20-10-26 15:16:45; Generating data points for circuit: 84/125
+     ┌──────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi/2,3pi/2) ├┤M├
+     └──────────────────────┘└╥┘
+c_0: ═════════════════════════╩═
+                                
+20-10-26 15:16:46; Last circuit took: 0.83 seconds.
+20-10-26 15:16:46; Generating data points for circuit: 85/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi/2,2pi) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:47; Last circuit took: 0.82 seconds.
+20-10-26 15:16:47; Generating data points for circuit: 86/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi,0) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:16:47; Last circuit took: 0.79 seconds.
+20-10-26 15:16:47; Generating data points for circuit: 87/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi,pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:48; Last circuit took: 0.77 seconds.
+20-10-26 15:16:48; Generating data points for circuit: 88/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi,pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:49; Last circuit took: 0.79 seconds.
+20-10-26 15:16:49; Generating data points for circuit: 89/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi,3pi/2) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:50; Last circuit took: 0.79 seconds.
+20-10-26 15:16:50; Generating data points for circuit: 90/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,pi,2pi) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:50; Last circuit took: 0.80 seconds.
+20-10-26 15:16:50; Generating data points for circuit: 91/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,3pi/2,0) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:51; Last circuit took: 0.82 seconds.
+20-10-26 15:16:51; Generating data points for circuit: 92/125
+     ┌──────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,3pi/2,pi/2) ├┤M├
+     └──────────────────────┘└╥┘
+c_0: ═════════════════════════╩═
+                                
+20-10-26 15:16:52; Last circuit took: 0.84 seconds.
+20-10-26 15:16:52; Generating data points for circuit: 93/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,3pi/2,pi) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:53; Last circuit took: 0.80 seconds.
+20-10-26 15:16:53; Generating data points for circuit: 94/125
+     ┌───────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,3pi/2,3pi/2) ├┤M├
+     └───────────────────────┘└╥┘
+c_0: ══════════════════════════╩═
+                                 
+20-10-26 15:16:54; Last circuit took: 0.80 seconds.
+20-10-26 15:16:54; Generating data points for circuit: 95/125
+     ┌─────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,3pi/2,2pi) ├┤M├
+     └─────────────────────┘└╥┘
+c_0: ════════════════════════╩═
+                               
+20-10-26 15:16:55; Last circuit took: 0.80 seconds.
+20-10-26 15:16:55; Generating data points for circuit: 96/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,2pi,0) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:16:55; Last circuit took: 0.79 seconds.
+20-10-26 15:16:55; Generating data points for circuit: 97/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,2pi,pi/2) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:16:56; Last circuit took: 0.80 seconds.
+20-10-26 15:16:56; Generating data points for circuit: 98/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,2pi,pi) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:16:57; Last circuit took: 0.79 seconds.
+20-10-26 15:16:57; Generating data points for circuit: 99/125
+     ┌─────────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,2pi,3pi/2) ├┤M├
+     └─────────────────────┘└╥┘
+c_0: ════════════════════════╩═
+                               
+20-10-26 15:16:58; Last circuit took: 0.80 seconds.
+20-10-26 15:16:58; Generating data points for circuit: 100/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(3pi/2,2pi,2pi) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:16:59; Last circuit took: 0.80 seconds.
+20-10-26 15:16:59; Generating data points for circuit: 101/125
+     ┌─────────────┐┌─┐
+q_0: ┤ U3(2pi,0,0) ├┤M├
+     └─────────────┘└╥┘
+c_0: ════════════════╩═
+                       
+20-10-26 15:17:01; Last circuit took: 2.10 seconds.
+20-10-26 15:17:01; Generating data points for circuit: 102/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(2pi,0,pi/2) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:17:01; Last circuit took: 0.87 seconds.
+20-10-26 15:17:01; Generating data points for circuit: 103/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(2pi,0,pi) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:17:02; Last circuit took: 0.78 seconds.
+20-10-26 15:17:02; Generating data points for circuit: 104/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(2pi,0,3pi/2) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:17:03; Last circuit took: 0.78 seconds.
+20-10-26 15:17:03; Generating data points for circuit: 105/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(2pi,0,2pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:17:05; Last circuit took: 2.10 seconds.
+20-10-26 15:17:05; Generating data points for circuit: 106/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi/2,0) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:17:06; Last circuit took: 0.85 seconds.
+20-10-26 15:17:06; Generating data points for circuit: 107/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi/2,pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:17:07; Last circuit took: 0.79 seconds.
+20-10-26 15:17:07; Generating data points for circuit: 108/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi/2,pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:17:08; Last circuit took: 0.79 seconds.
+20-10-26 15:17:08; Generating data points for circuit: 109/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi/2,3pi/2) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:17:10; Last circuit took: 2.15 seconds.
+20-10-26 15:17:10; Generating data points for circuit: 110/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi/2,2pi) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:17:11; Last circuit took: 0.85 seconds.
+20-10-26 15:17:11; Generating data points for circuit: 111/125
+     ┌──────────────┐┌─┐
+q_0: ┤ U3(2pi,pi,0) ├┤M├
+     └──────────────┘└╥┘
+c_0: ═════════════════╩═
+                        
+20-10-26 15:17:11; Last circuit took: 0.78 seconds.
+20-10-26 15:17:11; Generating data points for circuit: 112/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi,pi/2) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:17:12; Last circuit took: 0.79 seconds.
+20-10-26 15:17:12; Generating data points for circuit: 113/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(2pi,pi,pi) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:17:14; Last circuit took: 2.15 seconds.
+20-10-26 15:17:14; Generating data points for circuit: 114/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi,3pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:17:15; Last circuit took: 0.84 seconds.
+20-10-26 15:17:15; Generating data points for circuit: 115/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(2pi,pi,2pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:17:16; Last circuit took: 0.78 seconds.
+20-10-26 15:17:16; Generating data points for circuit: 116/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(2pi,3pi/2,0) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:17:17; Last circuit took: 0.80 seconds.
+20-10-26 15:17:17; Generating data points for circuit: 117/125
+     ┌────────────────────┐┌─┐
+q_0: ┤ U3(2pi,3pi/2,pi/2) ├┤M├
+     └────────────────────┘└╥┘
+c_0: ═══════════════════════╩═
+                              
+20-10-26 15:17:19; Last circuit took: 2.18 seconds.
+20-10-26 15:17:19; Generating data points for circuit: 118/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(2pi,3pi/2,pi) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:17:20; Last circuit took: 0.86 seconds.
+20-10-26 15:17:20; Generating data points for circuit: 119/125
+     ┌─────────────────────┐┌─┐
+q_0: ┤ U3(2pi,3pi/2,3pi/2) ├┤M├
+     └─────────────────────┘└╥┘
+c_0: ════════════════════════╩═
+                               
+20-10-26 15:17:21; Last circuit took: 0.79 seconds.
+20-10-26 15:17:21; Generating data points for circuit: 120/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(2pi,3pi/2,2pi) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:17:21; Last circuit took: 0.78 seconds.
+20-10-26 15:17:21; Generating data points for circuit: 121/125
+     ┌───────────────┐┌─┐
+q_0: ┤ U3(2pi,2pi,0) ├┤M├
+     └───────────────┘└╥┘
+c_0: ══════════════════╩═
+                         
+20-10-26 15:17:24; Last circuit took: 2.18 seconds.
+20-10-26 15:17:24; Generating data points for circuit: 122/125
+     ┌──────────────────┐┌─┐
+q_0: ┤ U3(2pi,2pi,pi/2) ├┤M├
+     └──────────────────┘└╥┘
+c_0: ═════════════════════╩═
+                            
+20-10-26 15:17:24; Last circuit took: 0.87 seconds.
+20-10-26 15:17:24; Generating data points for circuit: 123/125
+     ┌────────────────┐┌─┐
+q_0: ┤ U3(2pi,2pi,pi) ├┤M├
+     └────────────────┘└╥┘
+c_0: ═══════════════════╩═
+                          
+20-10-26 15:17:25; Last circuit took: 0.79 seconds.
+20-10-26 15:17:25; Generating data points for circuit: 124/125
+     ┌───────────────────┐┌─┐
+q_0: ┤ U3(2pi,2pi,3pi/2) ├┤M├
+     └───────────────────┘└╥┘
+c_0: ══════════════════════╩═
+                             
+20-10-26 15:17:26; Last circuit took: 0.79 seconds.
+20-10-26 15:17:26; Generating data points for circuit: 125/125
+     ┌─────────────────┐┌─┐
+q_0: ┤ U3(2pi,2pi,2pi) ├┤M├
+     └─────────────────┘└╥┘
+c_0: ════════════════════╩═
+                           
+20-10-26 15:17:28; Last circuit took: 2.17 seconds.
+20-10-26 15:17:28; Finished dataset generation with resolution n = 5, m = 5.
+20-10-26 15:17:28; Dataset saved to ../datasets/universal_error/AllErrors/U3_5_5_no_thermal.csv
+20-10-26 15:17:28; Exiting Gracefully

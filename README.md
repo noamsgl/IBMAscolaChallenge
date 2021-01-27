@@ -1,16 +1,44 @@
 # IBM Ascola Challenge
 
-IBMAscolaChallenge is a Python library for predicting a Qiskit NoiseModel using machine learning.
-
-## Installation
-For the largest dataset (U3_6_6.csv, 243Mb) refer to https://drive.google.com/drive/folders/1AyGy_VYOjpMLE_dmz-4ZQ1NY-A5inEca
+This research project was pursued during the [IBM](https://www.research.ibm.com/labs/haifa/) - [Ascola](https://www.madaney.net/en/site/programs/ascola/)
+Challenge, August-December 2020.
 
 
-## Usage
+## The Challenge
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Although intermediate-scale quantum computers are available for use today, they suffer from quantum noise.
 
-Please make sure to update tests as appropriate.
+In order to combat this noise, our team aimed to predict the noise model applied to a quantum circuit
+using machine learning techniques.
 
-## License
+
+## Attempt at Solution
+
+### 1) Problem Statement
+We approached this problem as an open-ended question. Thus, a lot of time was devoted to
+translating the problem into concrete terms.
+![research problem](images/research_problem.png)
+
+
+### 2) Dataset Generation
+Using Qiskit Simulators, we produced synthetic datasets which span the defined state-space uniformly.
+![datasets](images/datasets.png)
+
+The datasets can be found in the [`datasets`](datasets) folder. Due to size limitations, the largest dataset can be found [here](https://drive.google.com/drive/folders/1AyGy_VYOjpMLE_dmz-4ZQ1NY-A5inEca).
+
+### 3) Dataset Exploration
+Finally, we explored the synthetic datasets produced using [Jupyter Notebooks](notebooks).
+
+![scatter plots](images/scatter_plots.png)
+![interactive plots](images/interactive.png)
+
+
+
+## Acknowledgments
+* [IBM Haifa](https://www.research.ibm.com/labs/haifa/)
+* [Ascola](https://www.madaney.net/en/site/programs/ascola/) 
+* [Qiskit](https://qiskit.org/)
+  
+<img src="images/ibm_logo.png" width="60" height="60">
+<img src="images/ascola_logo.png" width="60" height="60">
+<img src="images/qiskit_logo.png" width="60" height="60">
