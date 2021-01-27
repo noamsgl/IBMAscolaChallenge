@@ -33,6 +33,20 @@ Finally, we explored the synthetic datasets produced using [Jupyter Notebooks](n
 ![interactive plots](images/interactive.png)
 
 
+<!-- CONTACT -->
+## Contact
+
+Noam Siegel - noamsi@post.bgu.ac.il
+
+Raphaelbuzaglo - raphaelbuzaglo@gmail.com
+
+Shelly Garion - shelly@il.ibm.com
+
+Gadi Aleksandrowicz - gadial@gmail.com
+
+Project Link: [https://github.com/noamsgl/IBMAscolaChallenge](https://github.com/noamsgl/IBMAscolaChallenge)
+
+
 
 ## Acknowledgments
 * [IBM Haifa](https://www.research.ibm.com/labs/haifa/)
